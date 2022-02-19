@@ -1,10 +1,11 @@
-import 'package:boeoeg_app/kalendaritem.dart';
+import 'package:boeoeg_app/widgets/kalendaritem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cupertino_calendar/cupertino_calendar.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'classes/termin.dart';
+import 'package:intl/intl.dart';
+import 'classes/termine.dart';
 
 class KalendarClass extends StatefulWidget {
   const KalendarClass({Key? key}) : super(key: key);
@@ -14,6 +15,8 @@ class KalendarClass extends StatefulWidget {
 }
 
 class _KalendarClassState extends State<KalendarClass> {
+  List<dynamic> allEntries = [];
+  var _termine = Termine();
   @override
   void initState() {
     super.initState();
@@ -22,7 +25,17 @@ class _KalendarClassState extends State<KalendarClass> {
 
   void transferdata(List<dynamic> list) {
     for (var item in list) {
-      var mm = item;
+      allEntries.add(item);
+
+      _termine.addTermin(Termin(
+          id: item["id"],
+          name: item["name"],
+          datum: item["datum"],
+          adresse: item["adresse"],
+          uhrzeit: item["uhrzeit"].toString(),
+          notizen: item["notizen"],
+          treffpunkt: item["treffpunkt"],
+          kleidung: item["kleidung"]));
     }
   }
 
@@ -35,20 +48,28 @@ class _KalendarClassState extends State<KalendarClass> {
     return data;
   }
 
+  String currentDate() {
+    final DateTime now = DateTime.now();
+    final DateFormat formatter = DateFormat('dd.MM.yyyy');
+    final String formatted = formatter.format(now);
+    return formatted;
+  }
+
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
-        middle: const Text("Kalender"),
+        middle: Text("Kalender " + currentDate()),
         border: Border(
             bottom: BorderSide(
           color: Theme.of(context).dividerColor,
         )),
       ),
-      child: Center(
-        child: (ListView(
-          children: [KalendarItem(), KalendarItem(), KalendarItem(), Text("")],
-        )),
+      child: ListView.builder(
+        itemCount: _termine.orders.length,
+        itemBuilder: (BuildContext ctxt, int index) {
+          return KalendarItem(actTermin: _termine.orders[index]);
+        },
       ),
     );
   }

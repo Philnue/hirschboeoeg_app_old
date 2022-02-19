@@ -1,3 +1,4 @@
+import 'package:boeoeg_app/info.dart';
 import 'package:boeoeg_app/kalendar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,12 @@ class MyApp extends StatelessWidget {
       title: _title,
       theme: CupertinoThemeData(
         primaryColor: Colors.black,
+        textTheme: CupertinoTextThemeData(
+          textStyle: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       home: MyStatefulWidget(),
     );
@@ -61,7 +68,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           case 2:
             break;
           case 3:
-            break;
+            return InfoPage();
           default:
             break;
         }
