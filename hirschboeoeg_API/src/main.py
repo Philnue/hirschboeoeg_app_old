@@ -21,12 +21,12 @@ async def read_item(item_id):
 
 @api.get("/loadallmitglieder/")
 async def get_all_items():
-    values = con.getAllMitglieder()
+    values = con.getAllMitgliederWithDate()
     return values
 
 @api.get("/loadalltermine/")
 async def get_all_items():
-    values = con.getAllTermine()
+    values = con.getAllTermineSorted()
     return values
 
 @api.get("/addperson/{vorname},{nachname}")

@@ -24,18 +24,20 @@ class _KalendarClassState extends State<KalendarClass> {
   }
 
   void transferdata(List<dynamic> list) {
-    for (var item in list) {
-      allEntries.add(item);
+    if (list.isNotEmpty) {
+      for (var item in list) {
+        allEntries.add(item);
 
-      _termine.addTermin(Termin(
-          id: item["id"],
-          name: item["name"],
-          datum: item["datum"],
-          adresse: item["adresse"],
-          uhrzeit: item["uhrzeit"].toString(),
-          notizen: item["notizen"],
-          treffpunkt: item["treffpunkt"],
-          kleidung: item["kleidung"]));
+        _termine.addTermin(Termin(
+            id: item["id"],
+            name: item["name"],
+            datum: item["datum"],
+            adresse: item["adresse"],
+            uhrzeit: item["uhrzeit"].toString(),
+            notizen: item["notizen"],
+            treffpunkt: item["treffpunkt"],
+            kleidung: item["kleidung"]));
+      }
     }
   }
 
