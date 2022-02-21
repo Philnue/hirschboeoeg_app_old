@@ -188,6 +188,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "shared_preferences_ios",
+      "rootUri": "file:///Users/philipp/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_ios-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "shared_preferences_platform_interface",
+      "rootUri": "file:///Users/philipp/development/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_platform_interface-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/philipp/development/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -260,7 +272,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-02-19T14:04:01.133958Z",
+  "generated": "2022-02-21T22:25:42.211285Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }

@@ -16,40 +16,6 @@ class KalendarItem extends StatelessWidget {
     return formatted;
   }
 
-  String calcDate(String Datum) {
-    //"2022-02-20"
-    String right = "";
-
-    right += Datum.substring(8, 10);
-    right += ".";
-    right += Datum.substring(5, 7);
-    right += ".";
-    right += Datum.substring(0, 4);
-
-    return right;
-  }
-
-  String getDateCorrectly(String datum) {
-    String todayFormatted = DateTime.now().toString().substring(0, 10);
-
-    final today =
-        DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day)
-            .toString()
-            .substring(0, 10);
-    final tomorrow = DateTime(
-            DateTime.now().year, DateTime.now().month, DateTime.now().day + 1)
-        .toString()
-        .substring(0, 10);
-
-    if (today == datum) {
-      return "Heute";
-    }
-    if (tomorrow == datum) {
-      return "Morgen";
-    }
-    return calcDate(datum);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -57,7 +23,7 @@ class KalendarItem extends StatelessWidget {
         leading: Padding(
           padding: const EdgeInsets.all(5.0),
           child: Text(
-            getDateCorrectly(actTermin.datum),
+            actTermin.getDateCorrectly,
           ),
         ),
         title: Text(actTermin.name,
@@ -74,7 +40,7 @@ class KalendarItem extends StatelessWidget {
                   ),
                   const Text(" Uhr : "),
                   Text(
-                    actTermin.datum,
+                    actTermin.datumConvertedInGerman,
                   ),
                 ],
               ),

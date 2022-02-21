@@ -21,13 +21,44 @@ class Termin {
       required this.notizen,
       required this.treffpunkt,
       required this.kleidung});
+
+  String get getDateCorrectly {
+    final today =
+        DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day)
+            .toString()
+            .substring(0, 10);
+    final tomorrow = DateTime(
+            DateTime.now().year, DateTime.now().month, DateTime.now().day + 1)
+        .toString()
+        .substring(0, 10);
+
+    if (today == datum) {
+      return "Heute";
+    }
+    if (tomorrow == datum) {
+      return "Morgen";
+    }
+    return datumConvertedInGerman;
+  }
+
+  String get datumConvertedInGerman {
+    String right = "";
+
+    right += datum.substring(8, 10);
+    right += ".";
+    right += datum.substring(5, 7);
+    right += ".";
+    right += datum.substring(0, 4);
+
+    return right;
+  }
 }
 
 class Termine with ChangeNotifier {
   List<Termin> _termine = [];
 
   List<Termin> get orders {
-    return [..._termine];
+    return [..._termine].reversed.toList();
   }
 
   void addTermin(Termin termin) {

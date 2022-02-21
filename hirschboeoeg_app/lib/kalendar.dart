@@ -20,6 +20,7 @@ class _KalendarClassState extends State<KalendarClass> {
   @override
   void initState() {
     super.initState();
+
     loadData();
   }
 
@@ -41,13 +42,20 @@ class _KalendarClassState extends State<KalendarClass> {
     }
   }
 
-  Future<void> loadData() async {
-    String dataURL = "http://127.0.0.1:8000/loadalltermine/";
+  void loadData() async {
+    try {
+      String dataURL = "http://127.0.0.1:8000/loadalltermine/";
 
-    http.Response response = await http.get(dataURL);
-    var data = jsonDecode(response.body);
-    transferdata(data);
-    return data;
+      http.Response response = await http.get(dataURL);
+
+      var data = jsonDecode(response.body);
+
+      setState(() {
+        transferdata(data);
+      });
+    } catch (_) {
+      print("API load error");
+    }
   }
 
   String currentDate() {

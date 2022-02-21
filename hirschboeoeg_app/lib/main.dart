@@ -2,6 +2,9 @@ import 'package:boeoeg_app/info.dart';
 import 'package:boeoeg_app/kalendar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'dart:io';
+import 'package:shared_preferences_ios/shared_preferences_ios.dart';
 
 void main() => runApp(const MyApp());
 
@@ -37,6 +40,22 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
+  void initState() {
+    super.initState();
+
+    loadPrefs();
+    //var brightness = SchedulerBinding.instance!.window.platformBrightness;
+    //bool isDarkMode = brightness == Brightness.dark;
+  }
+
+  loadPrefs() async {
+    //final prefs = //await shared.getInstance();
+
+    //prefs.setInt("counter", 5);
+
+    //var tt = prefs.getInt("counter");
+  }
+
   Widget build(BuildContext context) {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(

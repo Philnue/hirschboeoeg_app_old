@@ -23,17 +23,13 @@ class _InfoPageState extends State<InfoPage> {
             ),
           ),
         ),
-        child: ListView(
-          children: [
-            Text("data"),
-            Text("test"),
-            Text("data"),
-            Text("test"),
-            Text("data"),
-            Text("test"),
-            Text("data"),
-            Text("test"),
-          ],
+        child: Container(
+          width: double.infinity,
+          child: ListView(
+            children: [
+              AemterWidget(),
+            ],
+          ),
         ));
   }
 }
