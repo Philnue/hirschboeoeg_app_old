@@ -3,8 +3,10 @@ import 'package:boeoeg_app/kalendar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:hive/hive.dart';
+import 'package:archive/archive.dart';
+import 'package:path_provider/path_provider.dart';
 import 'dart:io';
-import 'package:shared_preferences_ios/shared_preferences_ios.dart';
 
 void main() => runApp(const MyApp());
 
@@ -44,16 +46,29 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     super.initState();
 
     loadPrefs();
+
     //var brightness = SchedulerBinding.instance!.window.platformBrightness;
     //bool isDarkMode = brightness == Brightness.dark;
   }
 
   loadPrefs() async {
-    //final prefs = //await shared.getInstance();
+    var path = Directory.current.path;
+    Directory tempDir = await getTemporaryDirectory();
+    String tempPath = tempDir.path;
+    print(tempPath);
 
-    //prefs.setInt("counter", 5);
+    Directory test = await getLibraryDirectory();
+    Directory test1 = await getApplicationSupportDirectory();
+    Directory test2 = await getLibraryDirectory();
+    Directory appDocDir = await getApplicationDocumentsDirectory();
+    String appDocPath = appDocDir.path;
+    print(appDocPath);
+    var m = Hive.init(test.path);
+    var box = await Hive.openBox('testBox');
 
-    //var tt = prefs.getInt("counter");
+    box.put('name', 'Test');
+
+    print('Name: ${box.get('name')}');
   }
 
   Widget build(BuildContext context) {
@@ -70,7 +85,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.settings),
-            label: 'Einstellungen',
+            label: 'Einstellungen/Vorschläge',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.settings),

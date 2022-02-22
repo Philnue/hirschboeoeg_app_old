@@ -44,7 +44,7 @@ class _KalendarClassState extends State<KalendarClass> {
 
   void loadData() async {
     try {
-      String dataURL = "http://192.168.178.67:7777/loadalltermine/";
+      Uri dataURL = Uri.parse("http://192.168.178.67:7777/loadalltermine/");
 
       http.Response response = await http.get(dataURL);
 
@@ -54,7 +54,7 @@ class _KalendarClassState extends State<KalendarClass> {
         transferdata(data);
       });
     } catch (_) {
-      print("API load error");
+      print("API load error" + _.toString());
     }
   }
 
