@@ -44,7 +44,7 @@ class _KalendarClassState extends State<KalendarClass> {
 
   void loadData() async {
     try {
-      String dataURL = "http://127.0.0.1:8000/loadalltermine/";
+      String dataURL = "http://192.168.178.67:7777/loadalltermine/";
 
       http.Response response = await http.get(dataURL);
 
