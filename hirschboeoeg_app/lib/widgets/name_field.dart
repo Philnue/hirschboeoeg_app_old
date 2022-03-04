@@ -1,8 +1,6 @@
-import 'package:boeoeg_app/helper/hive.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:hive/hive.dart';
-import 'package:path_provider/path_provider.dart';
-import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class NamefieldWidget extends StatefulWidget {
   const NamefieldWidget({Key? key}) : super(key: key);
@@ -13,28 +11,15 @@ class NamefieldWidget extends StatefulWidget {
 
 class _NamefieldWidgetState extends State<NamefieldWidget> {
   late TextEditingController _textController;
-  late String _currentName;
-  loadPrefs() async {
-    //Directory test = await getLibraryDirectory();
-
-    //var m = Hive.init(test.path);
-    //var box = await Hive.openBox('testBox');
-
-    //box.put('name', 'NichtPhilipp');
-
-    //print('Name: ${box.get('name')}');
-
-    var m = HiveHelper();
-    m.loadHive();
-    m.saveDataString("name", "default");
-    print(m.loadDataString("name"));
-  }
+  late Box<dynamic> _box;
 
   @override
   void initState() {
     super.initState();
-    loadPrefs();
-    _textController = TextEditingController(text: 'initial text');
+
+    _box = Hive.box("settings");
+    //_textController =        TextEditingController(text: hiveHelper.loadDataString("name"));
+    _textController = TextEditingController(text: _box.get("name"));
   }
 
   void setNameToHive(String name) {}
@@ -44,10 +29,17 @@ class _NamefieldWidgetState extends State<NamefieldWidget> {
     return CupertinoTextField(
       controller: _textController,
       keyboardType: TextInputType.text,
+      placeholder: "Name",
+      decoration: BoxDecoration(
+          border: Border.all(
+        width: 0.5,
+        color: CupertinoColors.white,
+      )),
       onSubmitted: (value) {
         setState(() {
-          print(_textController.text);
           _textController.text = value;
+          _box.put("name", value);
+          print(value);
         });
       },
       prefix: Icon(CupertinoIcons.person),

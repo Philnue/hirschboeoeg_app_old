@@ -18,16 +18,6 @@ class _InfoPageState extends State<InfoPage> {
   @override
   void initState() {
     super.initState();
-
-    loadPrefs();
-  }
-
-  loadPrefs() async {
-    Directory test = await getLibraryDirectory();
-    var m = Hive.init(test.path);
-    var box = await Hive.openBox('testBox');
-    String name = box.get('name');
-    print(name);
   }
 
   @override

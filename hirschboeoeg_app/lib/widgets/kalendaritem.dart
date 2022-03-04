@@ -24,10 +24,15 @@ class KalendarItem extends StatelessWidget {
           padding: const EdgeInsets.all(5.0),
           child: Text(
             actTermin.getDateCorrectly,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
-        title: Text(actTermin.name,
-            style: CupertinoTheme.of(context).textTheme.textStyle),
+        title: Text(
+          actTermin.name,
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
         subtitle: SizedBox(
           width: double.infinity,
           child: Column(

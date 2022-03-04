@@ -44,7 +44,9 @@ class _KalendarClassState extends State<KalendarClass> {
 
   void loadData() async {
     try {
-      Uri dataURL = Uri.parse("http://192.168.178.67:7777/loadalltermine/");
+      //Uri dataURL = Uri.parse("http://192.168.178.67:7777/loadalltermine/");
+      Uri dataURL = Uri.parse(
+          "http://t0orznhg4raqbvfi.myfritz.net:43333/loadalltermine/");
 
       http.Response response = await http.get(dataURL);
 

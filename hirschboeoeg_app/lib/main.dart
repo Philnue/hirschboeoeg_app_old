@@ -1,7 +1,14 @@
 import 'package:boeoeg_app/MyHomePage.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() => runApp(MyApp());
+//void main() => runApp(MyApp());
+
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox('settings');
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   MyApp({Key? key}) : super(key: key);
@@ -42,11 +49,13 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   CupertinoThemeData get _lightTheme => const CupertinoThemeData(
         brightness: Brightness.light,
         primaryColor: CupertinoColors.black,
+        textTheme: CupertinoTextThemeData(primaryColor: CupertinoColors.black),
       );
 
   CupertinoThemeData get _darkTheme => const CupertinoThemeData(
         brightness: Brightness.dark,
         primaryColor: CupertinoColors.white,
+        textTheme: CupertinoTextThemeData(primaryColor: CupertinoColors.white),
       );
 
   @override
