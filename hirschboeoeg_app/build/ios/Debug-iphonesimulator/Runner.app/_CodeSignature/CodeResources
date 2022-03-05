@@ -4,156 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AppCenterDistributeResources.bundle/Info.plist</key>
-		<data>
-		Lmb2SNi/LwnCiblCGSxN5Rz1cg4=
-		</data>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeDirectory</key>
-		<data>
-		C1v/qN9Q2b9I4yj9ZL3ZkaFWOE8=
-		</data>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		Ql55SHQKqF7y8VTBql9r2IKMDzg=
-		</data>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		N+uqOmJKRgNzLGoRh9ByaLgT5lE=
-		</data>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
-		<key>AppCenterDistributeResources.bundle/cs.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sY/xVlK5Kw0Til7Sxv812LZqjVo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/de.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ubv9pzkKkfF1/lFu+PlVvon/X+4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/en.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ghbZN6nVsIL3Ejm8awjYa1DyRaM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/es.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			A+c6OMRtIdkoZXzr2yKc4QTrqk4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/fr.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iqAABYLU9PNXInJqx0V8+g/sl74=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/it.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AFhb9qG51o81ZI6jOl24qMvUCg4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/ja.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Si8UdlqipWT159EYtY0dLpCU0xg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/ko.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bBwKI/cckoZObj6dw5qWSDpUuOY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/pl.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ajm7C0HgRppkDMmh/kCRtKrbwNQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/pt.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HvQcvBo38CihzyNsgP4mco13V4s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/ru.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oGqmwZxsSzGqAJSLMi+bzek+z+s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/tr.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			S7qPxTgPvkitxcjtZPC9qh4bVSA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/zh-Hans.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AspZH31iUw+3YupoMPk2SLxd5TQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/zh-Hant.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7V3UcFXF/+Hts2DZBaVUpGKEBog=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>AppFrameworkInfo.plist</key>
 		<data>
 		E9JtVX3y69tg0aOODFcuFW1dIEM=
@@ -172,7 +22,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		PvaFoYYWiycoaiLg6fjbTozFTBs=
+		mqatSaOfK/LK7Io8tl4jfvqoS/o=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -196,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		8Q+/p79d+me5H6sxM3ZwcD3OVKQ=
+		Vy5xkeVolSPU84cWgIR5yuwa4A0=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -204,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		nTNMUR+EyRgivs4i1uv+CE+Y1vE=
+		NYstQhDluqDawp9sqmt2U0i+55U=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -228,7 +78,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		/ZXhvr6t9CP05SidqVbXePd1NDA=
+		94gwUNzQTET6YINmRlb1etT9/t0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -240,7 +90,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		X8749QsR6TRLAnxqJ8PwOZE2A94=
+		nfJMF7KrtA/DpVLoa3viP86fhLc=
 		</data>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
 		<data>
@@ -322,18 +172,6 @@
 		<data>
 		1QumeTTkdhWvmY7i40QoJewEapE=
 		</data>
-		<key>Frameworks/flutter_absolute_path.framework/Info.plist</key>
-		<data>
-		+5J3qumQHmpaBPyP2fmG37RfHhY=
-		</data>
-		<key>Frameworks/flutter_absolute_path.framework/_CodeSignature/CodeResources</key>
-		<data>
-		vQjifE77PDloKpeOeddEd4gnELU=
-		</data>
-		<key>Frameworks/flutter_absolute_path.framework/flutter_absolute_path</key>
-		<data>
-		4t7b/TOYgeRXuT9Y0q09glN3M6Q=
-		</data>
 		<key>Frameworks/path_provider_ios.framework/Info.plist</key>
 		<data>
 		Bv3nGBxpJr+0du+lZ7C9/hFOQug=
@@ -344,7 +182,7 @@
 		</data>
 		<key>Frameworks/path_provider_ios.framework/path_provider_ios</key>
 		<data>
-		OhD+LhxWucFaBwd8w7v/J/Cp3DU=
+		wwUz790sWbTQr0us9ArtYRMjujQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -357,174 +195,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AppCenterDistributeResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MMzDNX02Mo1d4TP0bdej4jZpXsKKhqdh1Pj1FfDLVQw=
-			</data>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lWY5KmQ5opFNQwKRiWfTIH17Xz9LEcPlqpeUsrqBVdA=
-			</data>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WupU5ui4fFCt/bQMSs4rPd6iU4J1GBIST1atcQ1wuCE=
-			</data>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			A1paGapylKbbyopnvt1V1Ufi2VQxA2yCJQPS5VF1srI=
-			</data>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
-			</data>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/cs.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EzUldwY+SIKuCy8NB+896t7e/VF4TulJrskvevdy2fk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/de.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IHpXFfF5/BUPVT++TunUbwutWWaaZUZ2Jeti8uUFhwA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/en.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			G62FELAeWILfDqBPABAVT13yFe3O4Mbsw4jnmhKoWyw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/es.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3rgq6mrm8+4yMiytJWWIF9fHW4GfdHeFGNgTsCHlokc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/fr.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tgZLdJ9qu0eoBHqiUddsKgDz6wbUHY2ReI7rIobw1lw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/it.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sS7IUsZwCENq4N/uP6DRdUwQmBClX+JQQjgW4ERkuAc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/ja.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+BZZqR1B0Szq7Umyy+dPddw/t4lP9auVgYNJBbXnlgM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/ko.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VBB14dHb4mG6ppqwEuG4xdq4OxxWA/l52xPKXD++Q10=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/pl.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Kcq81IKMW4J1fmwxwZskDm4ngsEtln91vH1WwFrdeK0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/pt.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			a2cLQqqGDy333wrBvNRGYQfi9eENkYHnO+fguTnVGXg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/ru.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zZx1OtEXNrrp46gn+pg8fN+kYsj9vnu01Jhb1JZi+go=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/tr.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6BdNjQHlY/jVpH3d1CVPfKcEPJGU3O+G81u0L1JP+mY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/zh-Hans.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CEyveZfi9EQ4vW9v47LlFGCb64qfYCqR6EMU88xRNgY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AppCenterDistributeResources.bundle/zh-Hant.lproj/AppCenterDistribute.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			S4+9ozn8l6xff83fAODKCp7qBE9liuHZPlDNupatdt4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>AppFrameworkInfo.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -557,7 +227,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ka6ZwX1UjnyFzm94J/eduM/TYKXfDWqh2VlZMHp8tAI=
+			uZ+PJk4i2dQ3GtQyG4q4qoWbgRYnOpFYE0qm1llKvgI=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -599,7 +269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CBSK20bC3xXvaBeJgXk16pWDlILjgmV6BdWuRdlE8o8=
+			BgdbmAQDovxiLDHFyXiL7XKve5iBeNbzUcwHtT11BAY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -613,7 +283,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qZPnlQXmp8RoI6hmTgRFGtMAFHWMwiquBNkKUbCKjvE=
+			83GZDWQNsBzkxuWG1qpcajr2YCjuNoz7mMCzVgCDmPM=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -655,7 +325,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p/hVgSYxA+kofqBcJ5BmsLkkfcJWw1RtQM3L+rfjYi8=
+			sqMAF1xRYGWUpf9KCj1ChNJSm+hWqOVhzq0oLN01plA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -676,7 +346,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L8DSk0pN7y3KTGaJhWiAewpxnEOBj5kpSHugxNAK5vU=
+			SC+K+8iXxxF3GRND6qV793aIYP5UOyMAN1uMJPihs1c=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
@@ -819,27 +489,6 @@
 			Y7sS66zRuTsBvhoY8E7AmSrn+3DMMIOCUocmE2apBcw=
 			</data>
 		</dict>
-		<key>Frameworks/flutter_absolute_path.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BbFnvlAZO6qd3SAgicqBLCSLkox2K5F//gT5kCijiDs=
-			</data>
-		</dict>
-		<key>Frameworks/flutter_absolute_path.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iSmP+0HPNfnqCYhsqvmp5pT85yOiWVOP09A02mYt59s=
-			</data>
-		</dict>
-		<key>Frameworks/flutter_absolute_path.framework/flutter_absolute_path</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			87T4X9crkdmbBLp6YIl4duKeinGoXkBdq/Tid8i0czM=
-			</data>
-		</dict>
 		<key>Frameworks/path_provider_ios.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -858,7 +507,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HeYXEwJZu78/tYi39Z1JyhXKWJpmW/NdejKlLlsS79o=
+			RPeCMyh+TZI6foLwAxY2vXmFjB259PkTJjVRUTdYCdw=
 			</data>
 		</dict>
 	</dict>

@@ -18,14 +18,58 @@ class _SelectedCalendarItemState extends State<SelectedCalendarItem> {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
         middle: Text(args.name),
+        trailing: Text(args.datumConvertedInGerman),
       ),
       child: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text(args.adresse),
-          Text(args.datum),
-          Text(args.kleidung),
-          Text(args.notizen),
-          Text(args.treffpunkt),
+          Row(
+            children: [
+              Icon(
+                CupertinoIcons.placemark,
+                size: 30,
+              ),
+              Text(
+                args.treffpunkt,
+                style: TextStyle(fontSize: 28),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Icon(
+                CupertinoIcons.briefcase,
+                size: 30,
+              ),
+              Text(
+                args.kleidung,
+                style: TextStyle(fontSize: 28),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Icon(
+                CupertinoIcons.placemark_fill,
+                size: 30,
+              ),
+              Text(
+                args.adresse,
+                style: TextStyle(fontSize: 28),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Icon(
+                CupertinoIcons.text_justify,
+                size: 30,
+              ),
+              Text(
+                args.notizen,
+                style: TextStyle(fontSize: 28),
+              ),
+            ],
+          ),
           Row(
             children: [
               Text("Nehme ich teil ?"),

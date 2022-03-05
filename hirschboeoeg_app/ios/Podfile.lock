@@ -1,29 +1,11 @@
 PODS:
-  - AppCenter (4.4.1):
-    - AppCenter/Analytics (= 4.4.1)
-    - AppCenter/Crashes (= 4.4.1)
-  - AppCenter/Analytics (4.4.1):
-    - AppCenter/Core
-  - AppCenter/Core (4.4.1)
-  - AppCenter/Crashes (4.4.1):
-    - AppCenter/Core
-  - AppCenter/Distribute (4.4.1):
-    - AppCenter/Core
   - Flutter (1.0.0)
   - path_provider_ios (0.0.1):
     - Flutter
 
 DEPENDENCIES:
-  - AppCenter
-  - AppCenter/Analytics
-  - AppCenter/Crashes
-  - AppCenter/Distribute
   - Flutter (from `Flutter`)
   - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
-
-SPEC REPOS:
-  trunk:
-    - AppCenter
 
 EXTERNAL SOURCES:
   Flutter:
@@ -32,10 +14,9 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/path_provider_ios/ios"
 
 SPEC CHECKSUMS:
-  AppCenter: b0b6f1190215b5f983c42934db718f3b46fff3c0
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
   path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
 
-PODFILE CHECKSUM: 928a6b116eb0c26d78687fd97bc1ccf8dcff0ac0
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
 COCOAPODS: 1.11.2
