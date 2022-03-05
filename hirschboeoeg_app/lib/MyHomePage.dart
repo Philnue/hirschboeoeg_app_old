@@ -27,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.calendar),
-            label: 'Kalendar',
+            label: 'Kalender',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.check_mark),
@@ -35,10 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.settings),
-            label: 'Einstellungen/Vorschläge',
+            label: 'Einstellungen/V',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.settings),
+            icon: Icon(CupertinoIcons.info),
             label: 'Info',
           ),
         ],

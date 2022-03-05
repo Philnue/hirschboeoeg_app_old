@@ -29,7 +29,7 @@ class _SettingsPageState extends State<SettingsPage> {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
         middle: Text(
-          "Settings ",
+          "Einstellungen ",
         ),
         border: Border(
             bottom: BorderSide(

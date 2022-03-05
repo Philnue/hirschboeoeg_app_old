@@ -5,6 +5,7 @@ import 'package:cupertino_calendar/cupertino_calendar.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:intl/intl.dart';
+import 'dart:convert' show utf8;
 import 'classes/termine.dart';
 
 class KalendarClass extends StatefulWidget {

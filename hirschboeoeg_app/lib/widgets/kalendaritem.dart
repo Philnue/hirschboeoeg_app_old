@@ -1,3 +1,5 @@
+import 'package:boeoeg_app/widgets/aemter.dart';
+import 'package:boeoeg_app/widgets/selectedCalendarItem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../classes/termine.dart';
@@ -40,13 +42,11 @@ class KalendarItem extends StatelessWidget {
             children: [
               Row(
                 children: [
+                  Text("Treffpunkt: "),
                   Text(
                     actTermin.uhrzeit,
                   ),
-                  const Text(" Uhr : "),
-                  Text(
-                    actTermin.datumConvertedInGerman,
-                  ),
+                  const Text(" Uhr"),
                 ],
               ),
               Text(
@@ -55,7 +55,13 @@ class KalendarItem extends StatelessWidget {
             ],
           ),
         ),
-        trailing: Icon(Icons.info),
+        trailing: IconButton(
+          icon: Icon(CupertinoIcons.info_circle_fill),
+          onPressed: () {
+            Navigator.of(context).pushNamed(SelectedCalendarItem.routeName,
+                arguments: actTermin);
+          },
+        ),
       ),
     );
   }

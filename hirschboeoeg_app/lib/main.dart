@@ -1,4 +1,5 @@
 import 'package:boeoeg_app/MyHomePage.dart';
+import 'package:boeoeg_app/widgets/selectedCalendarItem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -64,6 +65,12 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       title: MyApp._title,
       theme: _brightness == Brightness.dark ? _darkTheme : _lightTheme,
       home: const MyHomePage(),
+      routes: {
+        //'/': (context) => const FirstScreen(),
+        // When navigating to the "/second" route, build the SecondScreen widget.
+        SelectedCalendarItem.routeName: (context) =>
+            const SelectedCalendarItem(),
+      },
     );
   }
 }
